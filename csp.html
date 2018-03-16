@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' code.jquery.com 'unsafe-inline'" >
+    <title>Content Security Policy</title>
+</head>
+
+<body>
+
+    <h1>Hello, Section 20!</h1>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script>
+        $("<p> Added by jQuery</p>").appendTo('body');
+
+    </script>
+
+</body>
+
+</html>
