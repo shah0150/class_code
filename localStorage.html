@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>localStorage Example</title>
+</head>
+
+<body>
+    <pre id="output"></pre>
+
+    <script>
+        
+        let matchID;
+        let matchName;
+        
+        let array = [{
+            name: "Simon",
+            value: 2
+        }, {
+            name: "Adesh",
+            value: 4
+        }, {
+            name: "Steve",
+            value: 3
+        }];
+        
+        array.forEach(function(item){
+            if(item.value === 4){
+                
+                matchName = item.name;
+            }
+        });
+        
+        console.log(matchName);
+        
+        
+        localStorage.setItem("section20", JSON.stringify(array));
+        
+        
+        let data = localStorage.getItem("section20");
+        console.log(data);
+        
+        let data2 = JSON.parse(data);
+                console.log(data2);
+
+
+    </script>
+</body>
+
+</html>
